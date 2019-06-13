@@ -59,6 +59,10 @@ module.exports = function ShellCtrl($scope) {
     openSetting('DevelopmentSettingsActivity')
   }
 
+  $scope.clearBukalapakApps = function() {
+    run('pm clear com.bukalapak.android ')
+  }
+
   $scope.clear = function() {
     $scope.command = ''
     $scope.data = ''
